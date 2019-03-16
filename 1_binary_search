@@ -11,25 +11,6 @@ int binary_search(vector<int>& A, int v){
 	return -1;// this line could be changed to "return l;" to return the number of values less than v if not found the exact v 
 }
 
-int binary_search_leftmost(vector<int>& A, int v){
-	int l=0;
-	int r=A.size();
-	while(l<r){
-		int mid=(l+r)/2;
-		if(A[mid]<v) l=mid+1;
-		else r=mid;
-	}
-	return l;//if not found, return the number of values less than v
-}
 
-int binary_search_rightmost(vector<int>& A, int v){
-	int l=0;
-	int r=A.size();
-	while(l<r){
-		int mid=(l+r)/2;
-		if(A[mid]<=v) l=mid+1;
-		else r=mid;
-	}
-	return l-1;// if not found, still return the number of values less than v
-}
+
 
