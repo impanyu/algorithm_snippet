@@ -1,5 +1,5 @@
 #code snippets
-1. ### binary search
+### 1. binary search
 ```c++
 //return the index of the element = v; if not found, return -1
 int binary_search(vector<int>& A, int v){
@@ -18,7 +18,7 @@ int binary_search(vector<int>& A, int v){
 
 
 
-2. ### binary search leftmost 
+### 2. binary search leftmost 
 ```c++
 int binary_search_leftmost(vector<int>& A, int v){
 	int l=0;
@@ -47,3 +47,22 @@ int binary_search_rightmost(vector<int>& A, int v){
 }
 ```
 
+### 4. binary tree inorder iterative traversal
+A variation of iterative dfs. For each node, push all the left children of its right child.
+void isValidBST(TreeNode* root) {  
+      stack<TreeNode*> s;
+      while(root!=nullptr){
+          s.push(root);
+          root=root->left;
+      }
+      while(!s.empty()){
+          TreeNode* current=s.top();
+          s.pop();
+          cout<<current->val;
+          TreeNode* right=current->right;
+          while(right!=nullptr){
+              s.push(right);
+              right=right->left;
+          }
+      }
+}
