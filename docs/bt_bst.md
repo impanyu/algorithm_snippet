@@ -50,7 +50,8 @@ int binary_search_rightmost(vector<int>& A, int v){
 
 ### 4. binary tree inorder iterative traversal
 ```c++
-A variation of iterative dfs. For each node, push all the left children of its right child.
+//A variation of iterative dfs. 
+//For each node, push all the left children of its right child.
 void isValidBST(TreeNode* root) {  
       stack<TreeNode*> s;
       while(root!=nullptr){
