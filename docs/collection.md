@@ -1,6 +1,9 @@
 # Collection
 
 ## 1. Two ways to customize a comparer for a collection such as priority_queue, map
+[link1](http://fusharblog.com/3-ways-to-define-comparison-functions-in-cpp/)
+[link2](https://stackoverflow.com/questions/16111337/declaring-a-priority-queue-in-c-with-a-custom-comparator)
+[function class](https://www.zhihu.com/question/38955439)
 
 ### a. Defining a compare function
 
