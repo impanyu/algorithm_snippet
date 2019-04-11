@@ -1,1 +1,13 @@
 theme: jekyll-theme-slate
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - index.md
+  - README.md
+  - bt_bst.md
+  - collection.md
+
+

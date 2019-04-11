@@ -1,6 +1,7 @@
 # BT_BST
 
 ### 1. binary search
+
 ```c++
 //return the index of the element = v; if not found, return -1
 int binary_search(vector<int>& A, int v){
