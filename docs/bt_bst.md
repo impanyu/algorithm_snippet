@@ -1,6 +1,6 @@
 # BT_BST
 
-### 1. binary search
+## 1. binary search
 
 ```c++
 //return the index of the element = v; if not found, return -1
@@ -20,7 +20,7 @@ int binary_search(vector<int>& A, int v){
 
 
 
-### 2. binary search leftmost 
+## 2. binary search leftmost 
 ```c++
 int binary_search_leftmost(vector<int>& A, int v){
 	int l=0;
@@ -34,7 +34,7 @@ int binary_search_leftmost(vector<int>& A, int v){
 }
 ```
 
-### 3. binary search rightmost
+## 3. binary search rightmost
 ```c++
 int binary_search_rightmost(vector<int>& A, int v){
 	int l=0;
@@ -45,11 +45,12 @@ int binary_search_rightmost(vector<int>& A, int v){
 		else r=mid;
 	}
         // if not found, still return the number of values less than v
-	return l-1;
+	// we can also return l, which means the upperbound of the searched element
+        return l-1;
 }
 ```
 
-### 4. binary tree inorder iterative traversal
+## 4. binary tree inorder iterative traversal
 ```c++
 //A variation of iterative dfs. 
 //For each node, push all the left children of its right child.

@@ -1,8 +1,8 @@
 # Collection
 
-## Two ways to customize a comparer for a collection such as priority_queue, map
+## 1. Two ways to customize a comparer for a collection such as priority_queue, map
 
-### 1. Defining a compare function
+### a. Defining a compare function
 
 ```c++
 bool compare (int a, int b){
@@ -13,7 +13,7 @@ priority_queue<int,vector<int>,function<bool(int,int)>> pq;
 map<int,function<bool(int,int)>> mp;
 ```
 
-### 2. Defining a compare functor
+### b. Defining a compare functor
 
 ```c++
 class compare
@@ -29,7 +29,7 @@ priority_queue<int,vector<int>,compare>> pq;
 map<int,compare> mp;
 ``` 
 
-### 3. These two methods can also be applied to sort function:
+### c. These two methods can also be applied to sort function:
 
 ```c++
 vector<int> v;
