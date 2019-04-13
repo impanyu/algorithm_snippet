@@ -6,47 +6,46 @@
 //return the index of the element = v; if not found, return -1
 int binary_search(vector<int>& A, int v){
 	int l=0;
-	int r=A.size()-1;
-	while(l<=r){
+	int r=A.size();
+	while(l<r){
 		int mid=(l+r)/2;
 		if(A[mid]==v) return mid;
-		else if(A[mid]<v) l=mid+1;
-		else r=mid-1; 
+		else if(A[mid]>v) r=mid;
+		else l=mid+1; 
 	}
-       //this line could be changed to "return l;" to return the number of values less than v if not found the exact v 
-       return -1;
+       //if not found, return upperbound of v 
+       return l;
 }
 ```
 
 
 
-## 2. binary search leftmost 
+## 2. binary search lowerbound 
 ```c++
 int binary_search_leftmost(vector<int>& A, int v){
 	int l=0;
 	int r=A.size();
 	while(l<r){
 		int mid=(l+r)/2;
-		if(A[mid]<v) l=mid+1;
-		else r=mid;
+		if(A[mid]>=v) r=mid;
+		else l=mid+1;
 	}
-	return l;//if not found, return the number of values less than v
+	return l;//if not found, return upperbound of v; if found, return the index of leftmost searched value
 }
 ```
 
-## 3. binary search rightmost
+## 3. binary search upperbound
 ```c++
 int binary_search_rightmost(vector<int>& A, int v){
 	int l=0;
 	int r=A.size();
 	while(l<r){
 		int mid=(l+r)/2;
-		if(A[mid]<=v) l=mid+1;
-		else r=mid;
+		if(A[mid]>v) r=mid;
+		else l=mid+1;
 	}
-        // if not found, still return the number of values less than v
-	// we can also return l, which means the upperbound of the searched element
-        return l-1;
+	//not matter found or not found, return the upperbound of the searched element
+        return l;
 }
 ```
 
