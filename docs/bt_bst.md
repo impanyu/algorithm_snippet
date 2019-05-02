@@ -6,7 +6,7 @@
 //return the index of the element = v; if not found, return -1
 int binary_search(vector<int>& A, int v){
 	int l=0;
-	int r=A.size();
+	int r=A.size();//not A.size()-1, otherwise would be run for a single element
 	while(l<r){
 		int mid=(l+r)/2;
 		if(A[mid]==v) return mid;
@@ -17,8 +17,6 @@ int binary_search(vector<int>& A, int v){
        return l;
 }
 ```
-
-
 
 ## 2. binary search lowerbound 
 ```c++
