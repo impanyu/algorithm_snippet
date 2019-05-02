@@ -2,6 +2,7 @@
 
 ## kth smallest element using quickselect
 1. avg time complexity O(nlogn)
+
 ```c++
 class Solution {
 public:
