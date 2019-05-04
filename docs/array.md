@@ -1,7 +1,15 @@
 # array
 
 ## kth smallest element using quickselect
-1. avg time complexity O(nlogn)
+1. avg time complexity O(n), worst case O(n^2)
+f(n)=f(n/2)+o(n)
+f(n)
+f(n/2) n
+f(n/4) n/2
+...
+f(1)   2
+
+
 
 ```c++
 class Solution {
