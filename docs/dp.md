@@ -1,7 +1,7 @@
 # dp
 
-## longest common subsequence(https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/)
-1. wiki(https://en.wikipedia.org/wiki/Longest_common_subsequence_problem)
+## [longest common subsequence](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/)
+1. [wiki](https://en.wikipedia.org/wiki/Longest_common_subsequence_problem)
 
 ```c++
 int lcs(string A, string B){
