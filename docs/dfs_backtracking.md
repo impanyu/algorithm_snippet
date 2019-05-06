@@ -1,5 +1,6 @@
-## [topological sorting using dfs]
-1. pretty much the same of dfs, except for each node, we add it to a stack after complete all its children.
+## [topological sorting using dfs](https://www.geeksforgeeks.org/topological-sorting/)
+1. pretty much the same of dfs, except for each node, we add it to a stack after complete all its children.(add node from end to front)
+2. [wiki page](https://en.wikipedia.org/wiki/Topological_sorting), another method is kahn, in which we add the node with no incoming edge and delete its outbound edges.(add node from front to end)
 
 ```c++
 class Graph{
