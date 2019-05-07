@@ -75,13 +75,11 @@ int main()
 {
  int V=5;
  Graph g(5);
- //int graph[][]={{0,2,0,6,0},{2,0,3,8,5},{0,3,0,0,7},{6,8,0,0,9},{0,5,7,9,0}};
  g.add_edge(0,1,2);
  g.add_edge(0,3,6);
  g.add_edge(1,0,2);
  g.add_edge(1,1,3);
  g.add_edge(1,2,3);
- ///....
  g.prim_MST();
  g.print_MST();
  return 0;
