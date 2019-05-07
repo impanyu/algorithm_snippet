@@ -1,2 +1,2 @@
-# algorithm_snippet
-High frequency algorithm code snippet
+# code_snippet
+High frequency code snippet
