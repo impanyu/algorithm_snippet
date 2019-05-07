@@ -10,7 +10,7 @@ include:
   - bt_bst.md
   - collection.md
   - array.md
-  - dp.md
+  - string.md
   - dfs_backtracking.md
   - graph.md
   - bfs.md
