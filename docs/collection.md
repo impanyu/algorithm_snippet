@@ -53,7 +53,7 @@ vector<int> v;
 sort(begin(v),end(v),compare());
 ```
 
-##  [Add hash method to a pair<> class](https://www.techiedelight.com/use-pair-key-std-unordered_set-cpp/)
+##  2.[Add hash method to a pair<> class](https://www.techiedelight.com/use-pair-key-std-unordered_set-cpp/)
 
 ```c++
 class pair_hash
