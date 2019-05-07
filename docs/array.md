@@ -1,6 +1,6 @@
 # array
 
-## kth smallest element using quickselect
+## [kth largest element using quickselect](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 1. avg time complexity O(n), worst case O(n^2)
 f(n)=f(n/2)+o(n)
 f(n)
