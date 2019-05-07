@@ -1,6 +1,6 @@
 # bfs
 
-##[Kahn's algorithm for Topological Sorting](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)
+## [Kahn's algorithm for Topological Sorting](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)
 1. bfs based construct, use a queue to keep all the nodes with in_degree==0
 2. for each node, substract the in_degree of all its neigbours by one, and add them to queue when in_degree reaches 0
 3. another method is prim's, which is a dfs based method 
