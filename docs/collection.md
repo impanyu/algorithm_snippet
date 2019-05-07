@@ -67,7 +67,7 @@ class pair_hash
 }
 
 int main(){
-   unordered_set<pair<string,int>,pair_hash> set ={{"two",2},{"one",1},{"four",4},{"three",3}};
+   unordered_set<pair<string,int>,pair_hash> set = { {"two",2},{"one",1},{"four",4},{"three",3} };
    for (auto &p : set){
     cout<< p.first<<": "<<p.second<<"\n";
    }
