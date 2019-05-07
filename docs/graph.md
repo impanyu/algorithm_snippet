@@ -6,6 +6,7 @@
 3. similar to a bfs construct
 4. [wiki page](https://en.wikipedia.org/wiki/Minimum_spanning_tree)
 5. another algorithm is kruscal's which manipulate edges instead of nodes.
+6. time complexity O(V^2)
 
 ```c++
 class Graph{
@@ -60,7 +61,7 @@ void Graph::prim_MST(){
 }
 
 void Graph::print_MST(){
-   for(int i=0;i<V;i++)
+   for(int i=1;i<V;i++)
        cout<<parent[i]<<"-"<<i<<" "<<graph[i][parent[i]];
 }
 

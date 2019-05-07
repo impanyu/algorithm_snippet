@@ -13,6 +13,6 @@ include:
   - dp.md
   - dfs_backtracking.md
   - graph.md
-
+  - bfs.md
 
 

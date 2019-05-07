@@ -4,5 +4,6 @@
 ## [Array](array.md)
 ## [DP](dp.md)
 ## [DFS_Backtracking](dfs_backtracking.md)
+## [BFS](bfs.md)
 ## [Graph](graph.md)
 
