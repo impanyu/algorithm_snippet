@@ -1,5 +1,70 @@
 # bfs
 
+## [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 
+
+
+```c++
+class Graph{
+private:
+    int V;
+    list<int> *adj;
+    bool * visited;
+    list<int> queue;
+public:
+    Graph(int V);
+    void add_edge(int v, int w);
+    void bfs(int s);
+}  
+
+Graph::Graph(int V){
+    this->V=V;
+    adj=new list<int>[V];
+    visited=new bool[V];
+    queue=list<int>(V); 
+    for(int i=0;i<V;i++)
+       visited[i]=false;
+};
+
+void Graph::add_edge(int v,int w){
+   adj[v].push_back(w);
+}
+
+void Graph::bfs(int s){
+    visited[s]=true;
+    queue.push_back(s);
+    while(!queue.empty()){
+      int node=queue.front();
+      queue.pop_front();
+      cout<<node<<" ";
+      for(list<int>::iterator i=adj[node].begin();i!=adj[node].end();i++){
+         if(!visited[*i]){
+              visited[*i]=true;
+              queue.push_back(*i);
+          }
+     }  
+   }
+}
+
+int main(){
+ Graph g(4);
+ g.add_edge(0,1);
+ g.add_edge(0,2);
+ g.add_edge(1,2);
+ g.add_edge(2,0);
+ g.add_edge(2,3);
+ g.add_edge(3,3);
+
+ cout<< "Following is Breath First Traversal "
+     <<"(starting from vertex 2)\n";
+ g.bfs(2);
+ return 0;
+}
+```
+
+
+
+
+
 ## [Kahn's algorithm for Topological Sorting](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)
 1. bfs based construct, use a queue to keep all the nodes with in_degree==0
 2. for each node, substract the in_degree of all its neigbours by one, and add them to queue when in_degree reaches 0
@@ -81,3 +146,6 @@ int main()
 }
 
 ```
+
+
+
