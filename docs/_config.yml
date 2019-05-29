@@ -15,4 +15,6 @@ include:
   - graph.md
   - bfs.md
   - disjoint_set.md
+  - trie.md
+
 

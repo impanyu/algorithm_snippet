@@ -7,3 +7,5 @@
 ## [BFS](bfs.md)
 ## [Graph](graph.md)
 ## [Disjoint_Set](disjoint_set.md)
+## [Trie](trie.md)
+
