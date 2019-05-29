@@ -1,4 +1,4 @@
-#Trie(Prefix Tree)
+# Trie(Prefix Tree)
 
 ## implementing Trie
 
