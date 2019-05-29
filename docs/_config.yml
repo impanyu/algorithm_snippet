@@ -14,5 +14,5 @@ include:
   - dfs_backtracking.md
   - graph.md
   - bfs.md
-
+  - disjoint_set.md
 

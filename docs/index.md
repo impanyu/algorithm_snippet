@@ -6,4 +6,4 @@
 ## [DFS_Backtracking](dfs_backtracking.md)
 ## [BFS](bfs.md)
 ## [Graph](graph.md)
-
+## [Disjoint_Set](disjoint_set.md)
